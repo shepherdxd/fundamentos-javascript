@@ -45,7 +45,7 @@ function EsMayordeEdad(persona) {
 }
 
 function imprimirSiEsMayordeEdad(persona) {
-    if (EsMayorDeEdad(persona)) {
+    if (EsMayordeEdad(persona)) {
         console.log(`${persona.nombre} es mayor de edad`)
 
     } 
