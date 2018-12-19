@@ -16,7 +16,7 @@ const realizaDeporte = () => Math.random() < 0.4
 const META = sergio.peso - 3
 var Dias = 0 
 while (sergio.peso > META) {
-    debugger
+    
     if (comeMucho()) {
         aumentarDePeso(sergio)
 
@@ -42,4 +42,4 @@ for (var i = 1; i <= DIAS_DEL_AÑO; i++) {
         adelgazar(sergio)
     }
 }
-console.log(`pasaron ${dias} dias hasta que  ${sergio.nombre} adelgazo 3kg`)
+console.log(`pasaron ${Dias} dias hasta que  ${sergio.nombre} adelgazo 3kg`)
