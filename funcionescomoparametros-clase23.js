@@ -43,3 +43,4 @@ var policarpa = new persona(`policarpa`, `salavarrieta`, 1.89)
 sacha.soyAlto()
 erika.soyAlto()
 policarpa.soyAlto()
+
