@@ -17,10 +17,10 @@ Persona.prototype.saludar = function () {
 }
 
 class Desarrollador extends Persona {
-    
+
     constructor(nombre, apellido, altura) {
-        super(nombre,apellido,altura)
-        
+        super(nombre, apellido, altura)
+
     }
 
 }
@@ -36,11 +36,18 @@ desarrollador.prototype.saludar = function () {
     console.log(`Hola , me llamo $(this.nombre) $(this.apellido) y soy desarrollador/a`)
 
 }
+function responderSaludo(nombre, apellido, esDev) {
+    console.log(`buen dia ${nombre} ${apellido} `)
+    if (esDev) {
+        console.log(`Ah mira, no sabia que eras desarrollador/a `)
+    }
+
+}
 var sacha = new persona(`sacha`, `ariza`, 1.72)
 var erika = new persona(`erika`, `santander`, 1.65)
 var policarpa = new persona(`policarpa`, `salavarrieta`, 1.89)
 
-sacha.soyAlto()
-erika.soyAlto()
-policarpa.soyAlto()
+sacha.saludar(responderSaludo)
+erika.saludar(responderSaludo)
+policarpa.saludar(responderSaludo)
 
