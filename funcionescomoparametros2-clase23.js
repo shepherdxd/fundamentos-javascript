@@ -21,9 +21,13 @@ class Desarrollador extends Persona {
         super(nombre, apellido, altura)
     }
     saludar() {
-        console.log(`Hola,me llamo ${this.nombre} ${this.apellido} y soy Desarrollador`)
+  
+       // var nombre = this.nombre
+        //var apellido = this.apellido
+        var { nombre,apellido} = this
+        console.log(`Hola , me llamo ${nombre} ${apellido} y soy Desarrollador`)
         if (fn) {
-            fn(nombre, apellido, true)
+            fn(nombre,apellido, true)
         }
     }
 }
