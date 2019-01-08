@@ -18,6 +18,8 @@
         }
         //const cumpleaños = persona => persona.edad++
         const cumpleañosInmutables = persona => ({
+            ...persona,
+            edad:persona.edad + 1
             
         })
         </script>
